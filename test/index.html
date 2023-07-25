@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="card">
+        <div class="side back">osama</div>
+        <div class="side front">
+          <div class="txt">
+            أَعُوذُ بِاللهِ مِنْ الشَّيْطَانِ الرَّجِيمِ اللّهُ لاَ إِلَـهَ
+            إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ
+            لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي
+            يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ
+            وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ
+            بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ
+            يَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ. [آية الكرسى -
+            البقرة 255].
+          </div>
+          <div class="counter-circle">
+            <span id="counter">1</span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="pop-up-msg">
+      <span class="close">X</span>
+      <p>بسم الله الرحمن الرحيم</p>
+      <p>هذا العمل خالص لوجه الله </p>
+      <p>أسال الله العظيم أن يتقبل منا ومنكم </p>
+      <p>لا تنسونا من صالح دعائكم  </p>
+    </div>
+
+
+    <script>
+      // let counter = document.getElementById("counter");
+      // let circleArea = document.querySelector(".counter-circle");
+      // circleArea.addEventListener("click", (e) => {
+      //   if (counter.innerHTML === "1") {
+      //     counter.style.cssText = "animation :rotate 1s ease-out forwards;";
+      //     counter.innerHTML -= 1;
+      //   } else if (counter.innerHTML === "0") {
+      //     counter.style.cssText = "animation :rotate 1s ease-out forwards;";
+      //     counter.innerHTML = 0;
+      //   } else {
+      //     counter.innerHTML -= 1;
+      //   }
+      // });
+
+
+      let myMsg = document.querySelector(".pop-up-msg");
+      let closeMsg = document.querySelector(".close");
+      setTimeout(() => {
+        myMsg.style.cssText = `top:0%;`
+      }, 1000);
+      closeMsg.addEventListener("click", (e) => {
+        e.target.parentElement.style.cssText = "top:-100%"
+      })
+    </script>
+  </body>
+</html>
