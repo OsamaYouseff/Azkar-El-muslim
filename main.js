@@ -95,32 +95,15 @@ function getContent(fileSource, place, lang) {
 }
 
 if (window.location.pathname.split("/").pop() === "index.html") {
-  window.onload = getContent(
-    "morning_azkar-ar.json",
-    morningContent,
-    "arabic"
+  window.onload = getContent("morning_azkar-ar.json",morningContent,"arabic"
   );
-  window.onload = getContent(
-    "evening_azkar-ar.json",
-    eveningContent,
-    "arabic"
+  window.onload = getContent("evening_azkar-ar.json",eveningContent,"arabic"
   );
-  window.onload = getContent(
-    "salah_azkar-ar.json",
-    salahContent,
-    "arabic"
+  window.onload = getContent("salah_azkar-ar.json",salahContent,"arabic"
   );
 } else {
-  window.onload = getContent(
-    "morning_azkar-eng.json",
-    morningContent,
-    "english"
-  );
-  window.onload = getContent(
-    "evening_azkar-eng.json",
-    eveningContent,
-    "english"
-  );
+  window.onload = getContent("morning_azkar-eng.json",morningContent,"english");
+  window.onload = getContent("evening_azkar-eng.json",eveningContent,"english");
   window.onload = getContent("salah_azkar-eng.json", salahContent, "english");
 }
 
